@@ -101,7 +101,7 @@ for row in content_rows:
         print("ERROR: Not valid number of credits!!!")
         break
 	
-    print((   "SUBJECT: {}\n"
+    print(("SUBJECT: {}\n"
 	    + "GRADE:   {}\n"
 	    + "CREDITS: {}\n\n").format(subject_name,
 					grade,
