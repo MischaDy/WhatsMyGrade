@@ -57,11 +57,11 @@ def float_to_grade(float_num):
 pathstr = generate_path(PATH)
 
 ''' source = input("Please copy and paste the page source at:\n"
-               		+ pathstr + "\n"
-               		+ "(You must click on the i.)\n\n")
+		   + pathstr + "\n"
+		   + "(You must click on the i.)\n\n")
 '''
 with open("source.txt", "r") as srcfile:
-	source = srcfile.read()
+    source = srcfile.read()
 
 ### PARSE ###
 soup = bs4.BeautifulSoup(source, "html.parser")
@@ -101,16 +101,13 @@ for row in content_rows:
         print("ERROR: Not valid number of credits!!!")
         break
 	
-    print( ("SUBJECT: {}\n"
-		  + "GRADE:   {}\n"
-		  + "CREDITS: {}\n\n").format(subject_name,
-		  							  
-grade,
-									  
-credit_points))
+    print((   "SUBJECT: {}\n"
+	    + "GRADE:   {}\n"
+	    + "CREDITS: {}\n\n").format(subject_name,
+					grade,
+					credit_points))
     weighted_avgs += int(credit_points) * grade_to_float(grade)
     total_credits += int(credit_points)
 
 average_grade = weighted_avgs / total_credits
 print("Your average grade is: " + float_to_grade(average_grade))
-
