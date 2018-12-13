@@ -4,6 +4,10 @@ INTENDED FOR USERS OF UNI TÜBINGEN, GERMANY! Get the page source of your "Noten
 
 You can add the subjects you want to exlude in a comma-separated list (`TD-BLACKLIST`) at the top. 'Orientierungsprüfung' is included by default, since it's just a merge of two other subjects you've passed.
 
+If you want to get a taste first, try it online:
+https://repl.it/@Grust/AverageGrade/
+
+
 ## Features
 - Exclude predefined subjects from consideration (unsing the blacklist).
 - Automatically exclude failed subjects from consideration.
